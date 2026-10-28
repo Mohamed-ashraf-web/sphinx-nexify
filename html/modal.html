@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/modal.css">
+    <title>modal</title>
+</head>
+<body>
+
+    <div class="modal">
+        <h1 class="modal-title">Contact Us</h1>
+        <p class="modal-discreption">Fill in your information</p>
+
+        <form class="modal-input" id="modal-form" novalidate>
+            <label for="full-name">Full name</label>
+            <input type="text" id="full-name" placeholder="Enter your full Name" autocomplete="name" aria-describedby="name-error">
+            <p class="form-eror-name" id="name-error" aria-live="polite"></p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" autocomplete="email" aria-describedby="email-error">
+            <p class="form-eror-email" id="email-error" aria-live="polite"></p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="popup-overlay" id="popup" aria-hidden="true">
+        <div class="popup" role="alertdialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-text">
+            <h2 class="popup-title" id="popup-title">Nexify says</h2>
+            <p class="popup-text" id="popup-text">Message submitted successfully</p>
+            <div class="popup-actions">
+                <button type="button" class="popup-ok" id="popup-ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/modal.js" defer></script>
+
+</body>
+</html>
